@@ -1,0 +1,11 @@
+target/
+.idea/
+project/project/
+project/target/
+project/.jazzignore
+
+.cache-main
+.classpath
+.project
+.settings/
+/bin/
