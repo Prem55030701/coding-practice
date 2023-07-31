@@ -5,7 +5,10 @@ import java.util.Stack;
 
 public class NextGraterElement {
     public static void main(String[] args) {
-        int arr[] = {3, 8, 4, 1, 2, 6, 7, 2};
+
+        //int arr[]={4 , 5 , 2 , 25 };
+        int arr[] = { 13 , 7, 6 , 12};
+        // int arr[] = {3, 8, 4, 1, 2, 6, 7, 2};
         //printNGEBruteForce(arr);
         //printStack(arr);
         printOptimal(arr);
@@ -17,15 +20,16 @@ public class NextGraterElement {
        int max=arr[arr.length-1];
        for(i=arr.length-2;i>=0;i--)
        {
-           if(arr[i+1]>arr[i])
+          /* if(arr[i+1]>arr[i])
            {
               list.set(i,arr[i+1]);
            }
-          /* else {
+          else {
               // We do not need this , This condition is already covered in max logic
                if (list.get(i+1)>arr[i])
                    list.set(i,list.get(i+1)); */
-               else if (max>arr[i])
+               //else
+           if (max>arr[i])
                {
                    int k=i+1;
                    while (arr[k]<=arr[i])
